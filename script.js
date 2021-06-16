@@ -24,8 +24,10 @@ const messages = {
 
 const createMessage = () => {
     let message = '';
-    for(let part in messages){
-        message += part[Math.floor(Math.random() * 10) - 4]
-    }
-    console.log(message)
+    message += messages.firstPart[Math.floor(Math.random() * 5)]
+    message += messages.secondPart[Math.floor(Math.random() * 5)]
+    message += messages.thirdPart[Math.floor(Math.random() * 5)]
+    console.log(message);
 }
+
+createMessage();
